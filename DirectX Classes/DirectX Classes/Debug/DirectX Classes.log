@@ -1,0 +1,47 @@
+﻿Build started 18-05-2012 12:20:26 AM.
+     1>Project "F:\Programming\DirectX\DirectX Classes\DirectX Classes\DirectX Classes.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\DirectX Classes.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W1 /WX- /Od /Oy- /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt SpriteGame.cpp
+         SpriteGame.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Programming\DirectX\DirectX Classes\Debug\DirectX Classes.exe" /NOLOGO d3d11.lib d3dx11.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\DirectX Classes.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\Programming\DirectX\DirectX Classes\Debug\DirectX Classes.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Programming\DirectX\DirectX Classes\Debug\DirectX Classes.lib" /MACHINE:X86 Debug\BlankGame.obj
+         Debug\BlendDescriptor.obj
+         Debug\BlendState.obj
+         Debug\Buffer.obj
+         Debug\DirectXException.obj
+         Debug\Device.obj
+         Debug\DeviceContext.obj
+         Debug\InputElementDescriptor.obj
+         Debug\InputLayout.obj
+         Debug\Matrix.obj
+         Debug\PixelShader.obj
+         Debug\RenderTargetView.obj
+         Debug\Resource.obj
+         Debug\SamplerDescriptor.obj
+         Debug\SamplerState.obj
+         Debug\ShaderResourceView.obj
+         Debug\SwapChain.obj
+         Debug\SwapChainDescriptor.obj
+         Debug\Texture2D.obj
+         Debug\ViewPort.obj
+         Debug\BaseGame.obj
+         Debug\Main.obj
+         Debug\VertexShader.obj
+         Debug\Sprite.obj
+         Debug\SpriteGame.obj
+         Debug\TextureGame.obj
+         Debug\TriangleGame.obj
+         LINK : F:\Programming\DirectX\DirectX Classes\Debug\DirectX Classes.exe not found or not built by the last incremental link; performing full link
+         DirectX Classes.vcxproj -> F:\Programming\DirectX\DirectX Classes\Debug\DirectX Classes.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"F:\Programming\DirectX\DirectX Classes\Debug\DirectX Classes.exe;#1" /manifest "Debug\DirectX Classes.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         Deleting file "Debug\DirectX Classes.unsuccessfulbuild".
+         Touching "Debug\DirectX Classes.lastbuildstate".
+     1>Done Building Project "F:\Programming\DirectX\DirectX Classes\DirectX Classes\DirectX Classes.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.35

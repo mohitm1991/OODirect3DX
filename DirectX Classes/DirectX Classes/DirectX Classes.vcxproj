@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D2E52B33-2B64-4F1B-9FE7-C54DB5CB5596}</ProjectGuid>
+    <RootNamespace>DirectXClasses</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(DXSDK_DIR)Include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(DXSDK_DIR)Include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile />
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;d3dx11.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>d3d11.lib;d3dx11.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d11.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>d3d11.lib;d3dx11.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BlankGame.cpp" />
+    <ClCompile Include="Framework\BlendDescriptor.cpp" />
+    <ClCompile Include="Framework\BlendState.cpp" />
+    <ClCompile Include="Framework\Buffer.cpp" />
+    <ClCompile Include="Framework\DirectXException.cpp" />
+    <ClCompile Include="Framework\Device.cpp" />
+    <ClCompile Include="Framework\DeviceContext.cpp" />
+    <ClCompile Include="Framework\InputElementDescriptor.cpp" />
+    <ClCompile Include="Framework\InputLayout.cpp" />
+    <ClCompile Include="Framework\Matrix.cpp" />
+    <ClCompile Include="Framework\PixelShader.cpp" />
+    <ClCompile Include="Framework\RenderTargetView.cpp" />
+    <ClCompile Include="Framework\Resource.cpp" />
+    <ClCompile Include="Framework\SamplerDescriptor.cpp" />
+    <ClCompile Include="Framework\SamplerState.cpp" />
+    <ClCompile Include="Framework\ShaderResourceView.cpp" />
+    <ClCompile Include="Framework\SwapChain.cpp" />
+    <ClCompile Include="Framework\SwapChainDescriptor.cpp" />
+    <ClCompile Include="Framework\Texture2D.cpp" />
+    <ClCompile Include="Framework\ViewPort.cpp" />
+    <ClCompile Include="BaseGame.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Framework\VertexShader.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="SpriteGame.cpp" />
+    <ClCompile Include="TextureGame.cpp" />
+    <ClCompile Include="TriangleGame.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Framework\Includes\BlendDescriptor.h" />
+    <ClInclude Include="Framework\Includes\BlendState.h" />
+    <ClInclude Include="Framework\Includes\Buffer.h" />
+    <ClInclude Include="Framework\Includes\Device.h" />
+    <ClInclude Include="Framework\Includes\DeviceContext.h" />
+    <ClInclude Include="Framework\Includes\DirectX.h" />
+    <ClInclude Include="Framework\Includes\DirectXException.h" />
+    <ClInclude Include="Framework\Includes\InputElementDescriptor.h" />
+    <ClInclude Include="Framework\Includes\InputLayout.h" />
+    <ClInclude Include="Framework\Includes\Matrix.h" />
+    <ClInclude Include="Framework\Includes\PixelShader.h" />
+    <ClInclude Include="Framework\Includes\RenderTargetView.h" />
+    <ClInclude Include="Framework\Includes\Resource.h" />
+    <ClInclude Include="Framework\Includes\SamplerDescriptor.h" />
+    <ClInclude Include="Framework\Includes\SamplerState.h" />
+    <ClInclude Include="Framework\Includes\ShaderResourceView.h" />
+    <ClInclude Include="Framework\Includes\SwapChain.h" />
+    <ClInclude Include="Framework\Includes\SwapChainDescriptor.h" />
+    <ClInclude Include="Framework\Includes\Texture2D.h" />
+    <ClInclude Include="Framework\Includes\VertexShader.h" />
+    <ClInclude Include="Framework\Includes\ViewPort.h" />
+    <ClInclude Include="Includes\BaseGame.h" />
+    <ClInclude Include="Includes\BlankGame.h" />
+    <ClInclude Include="Includes\Sprite.h" />
+    <ClInclude Include="Includes\TextureGame.h" />
+    <ClInclude Include="Includes\TriangleGame.h" />
+    <ClInclude Include="Includes\SpriteGame.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Photo.jpg" />
+    <None Include="Resources\Sprite.dds" />
+    <None Include="Resources\Texture.dds" />
+    <None Include="SpriteShader.fx" />
+    <None Include="TextureShader.fx" />
+    <None Include="TriangleShader.fx" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
