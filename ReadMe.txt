@@ -1,8 +1,8 @@
-This has been put here as a part of final year project work by the following students  :  
+This has been put here by the following students  :  
 
 Akshay Gupta 2k8/COE/111
-Aman Garg 2k8/COE/112
 Mohit Mittal 2k8/COE/150
+Aman Garg 2k8/COE/112
 
 under faculty mentor Manoj Kumar, Professor, Department Of Computer Engineering , Delhi College Of Engineering.
 
