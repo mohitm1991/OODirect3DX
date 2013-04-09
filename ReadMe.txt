@@ -9,4 +9,4 @@ under faculty mentor Manoj Kumar, Professor, Department Of Computer Engineering 
 
 The Project aims to convert the procedure oriented DirectX API for DirectX into an Object Oriented API to ease the use of API as well as to enable memory management be handled by the API.
 
-If you are interested in being a part of the development of this project, you can contact Aman Garg(amangarg67@gmail.com) or  Akshay Gupta(akshay238@gmail.com).
+If you are interested in carrying the project forward, contact mohitm.1991@gmail.com
